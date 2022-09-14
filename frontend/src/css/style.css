@@ -1,0 +1,145 @@
+* {
+    padding: 0 ;
+    margin: 0 ;
+    box-sizing: border-box ;
+    outline: none ;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+:root {
+    --N100 : hsl(220, 20%, 98%) ;
+    --N200 : hsl(220, 16%, 94%) ;
+    --N300 : hsl(220, 16%, 80%) ;
+    --N500 : hsl(220, 12%, 50%) ;
+    --N700 : hsl(220, 16%, 20%) ;
+    --N900 : hsl(220, 20%, 12%) ;
+}
+
+body{
+    background-color: #fff ;
+}
+
+nav {
+    display: flex ;
+    text-align: center ;
+    color: var(--N500);
+    height: 4rem ;
+}
+
+nav i {
+    font-size: 2rem ;
+    margin-right: 1rem ;
+    color: hsl(160,90%,40%);
+}
+
+nav .brand {
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    width: 70% ;
+    margin: 0 auto ;
+}
+
+nav .title {
+    font-weight: 900 ;
+}
+
+.title span {
+    color: hsl(160,90%,40%) ;
+}
+
+main {
+    background-color: var(--N100);
+    max-width: 70% ;
+    margin: 0 auto ;
+    border-radius: 0.25rem ;
+    padding: 0.5rem ;
+    display: flex ;
+    flex-direction: column ;
+    height: calc(100vh - 5rem) ;
+}
+
+main .container {
+    width: 100% ;
+    flex: 1 ;
+    padding: 1rem ;
+}
+
+.message-box {
+    width: 100% ;
+    background-color: #fff ;
+    padding: 0.5rem ;
+    border-radius: 0.25rem ;
+}
+
+.message-box > * + * {
+    margin-top: 0.5rem ;
+}
+
+.message-box .action-buttons {
+    display: flex ;
+    align-items: center ;
+}
+.message-box .action-buttons button {
+    background-color: transparent ;
+    border: none ;
+    cursor: pointer ;
+    padding: 0.25rem ;
+    border-radius: 4px ;
+    width: 2rem ;
+    height: 2rem ;
+    color: var(--N500);
+}
+
+.message-box .action-buttons button:hover {
+    background-color: var(--N200);
+    color: var(--N900);
+}
+
+.message-box .send-button {
+    display: flex ;
+    align-items: center ;
+    justify-content: flex-end ;
+}
+
+.message-box .send-button button {
+    padding: 0.5rem 0.75rem ;
+    background-color: hsl(160,90%,40%) ;
+    color: #fff ;
+    border-radius: 50000px ;
+    border: none ;
+    cursor: pointer ;
+}
+
+.message-box .send-button button:hover {
+    box-shadow: 0 0 0 4px hsl(160,50%,90%);
+    background-color: hsl(160,90%,38%) ;
+}
+
+.message {
+    max-width: 75% ;
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.5rem ;
+    clear: both ;
+    margin: 2px 0;
+}
+
+.message.left {
+    float: left ;
+    background-color: var(--N200);
+    color: var(--700);
+}
+
+.message.right {
+    float: right;
+    background-color: hsl(160,90%,38%) ;
+    color: #fff ;
+}
+
+.message.middle {
+    text-align: center ;
+    margin: 0 auto ;
+    font-size: 0.75rem ;
+    color: var(--N500);
+}
